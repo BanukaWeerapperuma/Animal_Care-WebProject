@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+        <head>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>AnimalCare.LK</title>
+            <!-- CSS -->
+            <link rel="stylesheet" href="style.css" />
+            <script src="script.js" defer></script>
+            <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+            <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        </head>
+
+
+        <body>
+            <!-- Navigation Bar  start -->   
+  <nav class="nav" id="nav_"> 
+    <i class="uil uil-bars navOpenBtn"></i>
+      <a href="/index.html" class="logo">AnimalCare.LK</a>
+      <div class="navbar">
+          <a href="index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Service
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="/CareAnimal.html">Care Animal</a>
+            <a href="/SearchAnimal.html">Search Animals</a>
+            <a href="/Products.html">Product</a>
+            
+          </div> 
+        </div>
+        <a href="/aboutUs.html">About Us</a>
+        <a href="/team.html">Our team</a>
+        <a href="/contact.html">Contact Us</a>
+      </div>
+
+      <div class="sign_bar">
+        <a href="/DonateUs.html">Donate Now</a>
+        <a href="/logging.html">Sign up</a>
+      </div>
+    </nav>
+
+    <!-- Navigation Bar  end -->
+
+<div class="contact-container">
+    <div class="left-col1">
+      <br><br><br>
+        <div id="map">    
+        </div>
+    </div>
+    <div class="right-col">
+    <div class="theme-switch-wrapper">
+      
+  </div>
+  <br>
+      <h2 class="title">Add Your Animal</h2>
+      <p>"Connect with Us: Advocating for Animals Everywhere!"</p>
+      
+      <form id="contact-form" method="post">
+
+        <label for="name">Full name</label>
+    <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+        <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+        <label for="message">Your Location</label>
+    <input type="text" id="address-input" placeholder="Enter current an address">
+      <button id="search-button" class = "button1">Search</button>
+      <br> <br>
+      <label for="message">Message</label>
+    <textarea rows="1" placeholder="Your Message" id="message" name="message" required></textarea>
+       <button class = "button1" type="submit" id="submit" name="submit">Send</button>
+
+  </form>
+
+  <div id="error"></div>
+  <div id="success-msg"></div>
+    </div>
+  </div>
+  
+  <footer>
+    <p>&copy; 2024 Animal Care. All rights reserved.</p>
+  </footer>
+        </body>
+</html>
